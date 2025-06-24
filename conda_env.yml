@@ -17,8 +17,11 @@ dependencies:
   - seaborn>=0.11
   - numba>=0.50
   - pdb2pqr
+  - gcc_linux-64 # Added gcc
+  - gxx_linux-64 # Added g++ for freesasa if it needs c++
+  - freesasa # Install freesasa from conda-forge
   - pip
   - pip:
     - immunebuilder>=0.0.5,<=0.0.8
-    - freesasa==2.1.0
+    # - freesasa==2.1.0 # Removed from pip, will be installed by conda
     - open3d

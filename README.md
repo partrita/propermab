@@ -18,6 +18,40 @@ Now install the `propermab` package with
 pip install -e propermab/
 ```
 
+## Installation with Docker (Linux)
+
+Alternatively, you can use Docker to simplify the installation process.
+
+1.  **Build the Docker image:**
+    ```bash
+    docker build -t propermab_image .
+    ```
+
+2.  **Run the Docker container:**
+    ```bash
+    docker run -it --rm propermab_image
+    ```
+    This will start a bash session within the container where `propermab` and all its dependencies are installed. The `default_config.json` file inside the container is already configured for the Docker environment.
+
+    If you need to access files from your host machine (e.g., PDB files, sequence files, or save output files), you can mount a volume:
+    ```bash
+    docker run -it --rm -v /path/on/host:/data_on_host propermab_image
+    ```
+    Replace `/path/on/host` with the actual path to the directory on your host machine. Inside the container, this directory will be accessible at `/data_on_host`.
+
+    You can then run `propermab` scripts or use its Python API within this container. For example, to run an example script that uses a PDB file from your mounted volume:
+    ```python
+    # Inside the Docker container's Python interpreter
+    from propermab import defaults
+    from propermab.features import feature_utils
+
+    # The default_config.json is already set up in the Docker image
+    # No need to call defaults.system_config.update_from_json() unless you have a custom config
+
+    mol_feature = feature_utils.calculate_features_from_pdb('/data_on_host/your_pdb_file.pdb')
+    print(mol_feature)
+    ```
+
 ### APBS
 The APBS tool v3.0.0 is used by `propermab` to calculate electrostatic potentials. Download the tool and unzip it to a directory of your choice.
 ```bash
