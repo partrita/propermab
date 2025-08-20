@@ -17,6 +17,9 @@ dependencies:
   - seaborn>=0.11
   - numba>=0.50
   - pdb2pqr
+  - hmmer
+  - readline=7.0
+  - jupyter
   - pip
   - pip:
     - immunebuilder>=0.0.5,<=0.0.8
