@@ -1,10 +1,10 @@
 {
-    "hmmer_binary_path" : "",
-    "nanoshaper_binary_path" : "/ABPS_PATH/APBS-3.0.0.Linux/bin/NanoShaper",
-    "apbs_binary_path" : "/ABPS_PATH/APBS-3.0.0.Linux/bin/apbs",
-    "pdb2pqr_path" : "pdb2pqr",
-    "multivalue_binary_path" : "/ABPS_PATH/APBS-3.0.0.Linux/share/apbs/tools/bin/multivalue",
+    "hmmer_binary_path" : "/opt/conda/envs/propermab/bin",
+    "nanoshaper_binary_path" : "/app/APBS-3.0.0.Linux/bin/NanoShaper",
+    "apbs_binary_path" : "/app/APBS-3.0.0.Linux/bin/apbs",
+    "pdb2pqr_path" : "/opt/conda/envs/propermab/bin/pdb2pqr",
+    "multivalue_binary_path" : "/app/APBS-3.0.0.Linux/share/apbs/tools/bin/multivalue",
     "immunebuilder_weights_dir" : "",
-    "atom_radii_file" : "/Users/bian.li/projects/propermab/amber.siz",
-    "apbs_ld_library_paths" : ["LIB_PATH", "/ABPS_PATH/APBS-3.0.0.Linux/lib/"]
+    "atom_radii_file" : "/app/APBS-3.0.0.Linux/share/apbs/tools/pdb2pqr/dat/amber.siz",
+    "apbs_ld_library_paths" : ["/opt/conda/envs/readline_env/lib/", "/app/APBS-3.0.0.Linux/lib/"]
 }
