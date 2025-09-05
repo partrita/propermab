@@ -8,54 +8,54 @@
 #
 # “Regeneron” refers to Regeneron Pharmaceuticals, Inc.
 #
-# Regeneron hereby grants You a right to use, reproduce, modify, or distribute the PROPERMAB source 
-# code, in whole or in part, whether in original or modified form, for academic research purposes only. 
-# The foregoing right is royalty-free, worldwide (subject to applicable laws of the United States), 
+# Regeneron hereby grants You a right to use, reproduce, modify, or distribute the PROPERMAB source
+# code, in whole or in part, whether in original or modified form, for academic research purposes only.
+# The foregoing right is royalty-free, worldwide (subject to applicable laws of the United States),
 # revocable, non-exclusive, and non-transferable.
 #
-# Prohibited Uses: The rights granted herein do not include any right to use by commercial entities 
-# or commercial use of any kind, including, without limitation, (1) any integration into other code 
-# or software that is used for further commercialization, (2) any reproduction, copy, modification 
-# or creation of a derivative work that is then incorporated into a commercial product or service or 
-# otherwise used for any commercial purpose, (3) distribution of the source code, in whole or in part, 
-# or any resulting executables, in any commercial product, or (4) use of the source code, in whole 
+# Prohibited Uses: The rights granted herein do not include any right to use by commercial entities
+# or commercial use of any kind, including, without limitation, (1) any integration into other code
+# or software that is used for further commercialization, (2) any reproduction, copy, modification
+# or creation of a derivative work that is then incorporated into a commercial product or service or
+# otherwise used for any commercial purpose, (3) distribution of the source code, in whole or in part,
+# or any resulting executables, in any commercial product, or (4) use of the source code, in whole
 # or in part, or any resulting executables, in any commercial online service.
 #
-# Except as expressly provided for herein, nothing in this License grants to You any right, title or 
-# interest in and to the intellectual property of Regeneron (either expressly or by implication or estoppel).  
-# Notwithstanding anything else in this License, nothing contained herein shall limit or compromise 
-# the rights of Regeneron with respect to its own intellectual property or limit its freedom to practice 
+# Except as expressly provided for herein, nothing in this License grants to You any right, title or
+# interest in and to the intellectual property of Regeneron (either expressly or by implication or estoppel).
+# Notwithstanding anything else in this License, nothing contained herein shall limit or compromise
+# the rights of Regeneron with respect to its own intellectual property or limit its freedom to practice
 # and to develop its products and product candidates.
 #
-# If the source code, whole or in part and in original or modified form, is reproduced, shared or 
-# distributed in any manner, it must (1) identify Regeneron Pharmaceuticals, Inc. as the original 
-# creator, (2) retain any copyright or other proprietary notices of Regeneron, (3) include a copy 
+# If the source code, whole or in part and in original or modified form, is reproduced, shared or
+# distributed in any manner, it must (1) identify Regeneron Pharmaceuticals, Inc. as the original
+# creator, (2) retain any copyright or other proprietary notices of Regeneron, (3) include a copy
 # of the terms of this License.
 #
-# TO THE GREATEST EXTENT PERMITTED UNDER APPLICABLE LAW, THE SOURCE CODE (AND ANY DOCUMENTATION) IS 
-# PROVIDED ON AN “AS-IS” BASIS, AND REGENERON PHARMACEUTICALS, INC. EXPRESSLY DISCLAIMS ALL 
-# REPRESENTATIONS, WARRANTIES, AND CONDITIONS WITH RESPECT THERETO OF ANY KIND CONCERNING THE SOURCE 
-# CODE, IN WHOLE OR IN PART AND IN ORIGINAL OR MODIFIED FORM, WHETHER EXPRESS, IMPLIED, STATUTORY, OR 
-# OTHER REPRESENTATIONS, WARRANTIES AND CONDITIONS, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE, 
-# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, 
-# ACCURACY, COMPLETENESS, RIGHT TO QUIET ENJOYMENT, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR 
-# NOT KNOWN OR DISCOVERABLE.  REGENERON DOES NOT WARRANT THAT THE SOURCE CODE WILL OPERATE IN AN 
-# UNINTERRUPTED FASHION AND DATA MAY BE LOST OR UNRECOVERABLE. IN THE EVENT ANY OF THE PRIOR DISCLAIMERS 
-# ARE UNENFORCEABLE UNDER APPLICABLE LAW, THE LICENSES GRANTED HEREIN WILL IMMEDIATELY BE NULL AND 
+# TO THE GREATEST EXTENT PERMITTED UNDER APPLICABLE LAW, THE SOURCE CODE (AND ANY DOCUMENTATION) IS
+# PROVIDED ON AN “AS-IS” BASIS, AND REGENERON PHARMACEUTICALS, INC. EXPRESSLY DISCLAIMS ALL
+# REPRESENTATIONS, WARRANTIES, AND CONDITIONS WITH RESPECT THERETO OF ANY KIND CONCERNING THE SOURCE
+# CODE, IN WHOLE OR IN PART AND IN ORIGINAL OR MODIFIED FORM, WHETHER EXPRESS, IMPLIED, STATUTORY, OR
+# OTHER REPRESENTATIONS, WARRANTIES AND CONDITIONS, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE,
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,
+# ACCURACY, COMPLETENESS, RIGHT TO QUIET ENJOYMENT, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR
+# NOT KNOWN OR DISCOVERABLE.  REGENERON DOES NOT WARRANT THAT THE SOURCE CODE WILL OPERATE IN AN
+# UNINTERRUPTED FASHION AND DATA MAY BE LOST OR UNRECOVERABLE. IN THE EVENT ANY OF THE PRIOR DISCLAIMERS
+# ARE UNENFORCEABLE UNDER APPLICABLE LAW, THE LICENSES GRANTED HEREIN WILL IMMEDIATELY BE NULL AND
 # VOID AND YOU SHALL IMMEDIATELY RETURN TO REGENERON THE SOURCE CODE OR DESTROY IT.
 #
-# IN NO CASE SHALL REGENERON BE LIABLE FOR ANY LOSS, CLAIM, DAMAGE, OR EXPENSES, OF ANY KIND, WHICH 
-# MAY ARISE FROM OR IN CONNECTION WITH THIS LICENSE OR THE USE OF THE SOURCE CODE. YOU WAIVE AND 
-# RELEASE REGENERON FOREVER FROM ANY LIABILITY AND YOU SHALL INDEMNIFY AND HOLD REGENERON, ITS AFFILAITES 
-# AND ITS AND THEIR EMPLOYEES AND AGENTS HARMLESS FROM ANY LOSS, CLAIM, DAMAGE, EXPENSES, OR LIABILITY, 
-# OF ANY KIND, FROM A THIRD-PARTY WHICH MAY ARISE FROM OR IN CONNECTION WITH THIS LICENSE OR YOUR USE 
+# IN NO CASE SHALL REGENERON BE LIABLE FOR ANY LOSS, CLAIM, DAMAGE, OR EXPENSES, OF ANY KIND, WHICH
+# MAY ARISE FROM OR IN CONNECTION WITH THIS LICENSE OR THE USE OF THE SOURCE CODE. YOU WAIVE AND
+# RELEASE REGENERON FOREVER FROM ANY LIABILITY AND YOU SHALL INDEMNIFY AND HOLD REGENERON, ITS AFFILAITES
+# AND ITS AND THEIR EMPLOYEES AND AGENTS HARMLESS FROM ANY LOSS, CLAIM, DAMAGE, EXPENSES, OR LIABILITY,
+# OF ANY KIND, FROM A THIRD-PARTY WHICH MAY ARISE FROM OR IN CONNECTION WITH THIS LICENSE OR YOUR USE
 # OF THE SOURCE CODE.
 
-# You agree that this License and its terms are governed by the laws of the State of New York, without 
-# regard to choice of law rules and the United Nations Convention on the International Sale of Goods 
+# You agree that this License and its terms are governed by the laws of the State of New York, without
+# regard to choice of law rules and the United Nations Convention on the International Sale of Goods
 # shall not apply.
 #
-# Please reach out to Regeneron Pharmaceuticals Inc./Administrator relating to any non-academic or 
+# Please reach out to Regeneron Pharmaceuticals Inc./Administrator relating to any non-academic or
 # commercial use of the source code.
 import numpy as np
 import open3d as o3d
@@ -74,12 +74,13 @@ class Voxel:
         feature values. The default is None.
 
     """
+
     def __init__(
-            self,
-            size: float,
-            index: tuple = (0, 0, 0),
-            center_coords: np.ndarray = np.array([0., 0., 0.]),
-            feature_vector: np.ndarray = None
+        self,
+        size: float,
+        index: tuple = (0, 0, 0),
+        center_coords: np.ndarray = np.array([0.0, 0.0, 0.0]),
+        feature_vector: np.ndarray = None,
     ) -> None:
         """Constructor.
 
@@ -136,9 +137,11 @@ class Voxel:
             re-create the voxel object.
         """
         class_name = type(self).__name__
-        return f'{class_name}' \
-               f'({self.size}, {repr(self.index)}, {repr(self.center_coords)}, ' \
-               f'{repr(self._feature_vector)})'
+        return (
+            f"{class_name}"
+            f"({self.size}, {repr(self.index)}, {repr(self.center_coords)}, "
+            f"{repr(self._feature_vector)})"
+        )
 
     def __str__(self):
         """Returns a string representation of the voxel for ```print()```.
@@ -148,7 +151,9 @@ class Voxel:
         str
             String representation as output of ```print()```.
         """
-        return f'({self.size}, {self.index}, {self.center_coords}, {self._feature_vector})'
+        return (
+            f"({self.size}, {self.index}, {self.center_coords}, {self._feature_vector})"
+        )
 
 
 class VoxelGrid:
@@ -211,18 +216,20 @@ class VoxelGrid:
         pcd_center = o3d_point_cloud.get_center()
 
         voxel_grid = o3d.geometry.VoxelGrid.create_from_point_cloud_within_bounds(
-            o3d_point_cloud, voxel_size,
-            min_bound=np.array([-width, -height, -depth]) / 2. + pcd_center,
-            max_bound=np.array([width, height, depth]) / 2. + pcd_center
+            o3d_point_cloud,
+            voxel_size,
+            min_bound=np.array([-width, -height, -depth]) / 2.0 + pcd_center,
+            max_bound=np.array([width, height, depth]) / 2.0 + pcd_center,
         )
 
         new_voxel_grid = []
         for voxel in voxel_grid.get_voxels():
             new_voxel_grid.append(
                 Voxel(
-                    voxel_size, voxel.grid_index,
+                    voxel_size,
+                    voxel.grid_index,
                     voxel_grid.get_voxel_center_coordinate(voxel.grid_index),
-                    feature_vector=None
+                    feature_vector=None,
                 )
             )
         return cls(voxel_grid.origin, width, height, depth, voxel_size, new_voxel_grid)
@@ -245,17 +252,22 @@ class VoxelGrid:
             _description_, by default 1.0
         """
         voxel_grid = o3d.geometry.VoxelGrid.create_dense(
-            origin, color=[0.0, 0.0, 0.0],
-            voxel_size=voxel_size, width=width, height=height, depth=depth
+            origin,
+            color=[0.0, 0.0, 0.0],
+            voxel_size=voxel_size,
+            width=width,
+            height=height,
+            depth=depth,
         )
 
         new_voxel_grid = []
         for voxel in voxel_grid.get_voxels():
             new_voxel_grid.append(
                 Voxel(
-                    voxel_size, voxel.grid_index,
+                    voxel_size,
+                    voxel.grid_index,
                     voxel_grid.get_voxel_center_coordinate(voxel.grid_index),
-                    feature_vector=None
+                    feature_vector=None,
                 )
             )
         return cls(voxel_grid.origin, width, height, depth, voxel_size, new_voxel_grid)
@@ -275,7 +287,7 @@ class VoxelGrid:
         # make sure the length of feature values is equal to the number of voxels
         if len(feature_values) != len(self.voxels):
             raise ValueError(
-                'The number of feature values must be equal to the number of voxels.'
+                "The number of feature values must be equal to the number of voxels."
             )
 
         self._feature_tensor = np.zeros(self.get_shape())
@@ -294,7 +306,7 @@ class VoxelGrid:
         return (
             int(np.round(self.width / self.voxel_size)),
             int(np.round(self.height / self.voxel_size)),
-            int(np.round(self.depth / self.voxel_size))
+            int(np.round(self.depth / self.voxel_size)),
         )
 
     @property
@@ -324,7 +336,7 @@ class VoxelGrid:
         new_tensor_arr = np.array(new_tensor)
         if new_tensor_arr.shape != self.get_shape():
             raise ValueError(
-                'The shape of new tensor must be the same as the shape of the voxel grid.'
+                "The shape of new tensor must be the same as the shape of the voxel grid."
             )
         self._feature_tensor = new_tensor_arr
 
@@ -336,9 +348,7 @@ class VoxelGrid:
         np.ndarray
             The Cartesian coordinates of each voxel in the voxel grid.
         """
-        return np.array([
-            voxel.center_coords for voxel in self.voxels
-        ])
+        return np.array([voxel.center_coords for voxel in self.voxels])
 
     def write_voxel_grid_coords(self, csv_file: str) -> None:
         """Writes the Cartesian coordinates of each voxel to a CSV file.
@@ -349,7 +359,7 @@ class VoxelGrid:
             The CSV file to which voxel coordinates are to be written.
         """
         voxel_grid_coords = self.get_centers()
-        np.savetxt(csv_file, voxel_grid_coords, fmt='%.2f', delimiter=',')
+        np.savetxt(csv_file, voxel_grid_coords, fmt="%.2f", delimiter=",")
 
     def to_pdb(self, filename, voxel_values=None, threshold=None):
         """Write the voxel grid to a dummy PDB file for visualization with PyMOL.
@@ -371,7 +381,7 @@ class VoxelGrid:
         else:
             if voxel_values.shape != self.get_shape():
                 raise ValueError(
-                    f'Invalid shape of voxel values {voxel_values.shape}, expected {self.get_shape()}'
+                    f"Invalid shape of voxel values {voxel_values.shape}, expected {self.get_shape()}"
                 )
             if threshold is not None:
                 thresholded_coords = []
@@ -382,21 +392,23 @@ class VoxelGrid:
                         thresholded_values.append(value)
                 struct_io.write_to_pdb(filename, thresholded_coords, thresholded_values)
             else:
-                struct_io.write_to_pdb(filename, voxel_grid_coords, voxel_values.flatten())
+                struct_io.write_to_pdb(
+                    filename, voxel_grid_coords, voxel_values.flatten()
+                )
 
 
 def rotate_feature_tensor(feature_tensor):
     """List all 24 rotations of the given 3D tensor.
 
-    Parameters
-    ----------
-    feature_tensor : np.ndarray
-`       The feature tensor that encodes the voxel grid that contains it.
+        Parameters
+        ----------
+        feature_tensor : np.ndarray
+    `       The feature tensor that encodes the voxel grid that contains it.
 
-    Returns
-    -------
-    generator
-        A generator object that yields all 24 rotations of the tensor.
+        Returns
+        -------
+        generator
+            A generator object that yields all 24 rotations of the tensor.
     """
 
     def rotate_about_axes(tensor_3d, axes):
@@ -422,7 +434,7 @@ def rotate_feature_tensor(feature_tensor):
     yield from rotate_about_axes(np.rot90(feature_tensor, -1, axes=(0, 1)), (0, 2))
 
 
-def save_feature_tensor(feature_tensor, filename, mode='b'):
+def save_feature_tensor(feature_tensor, filename, mode="b"):
     """Saves feature tensor to disk file.
 
     Parameters
@@ -436,22 +448,21 @@ def save_feature_tensor(feature_tensor, filename, mode='b'):
         Text format may not work for tensors with rank > 3.
     """
     # Write the array to disk
-    if mode == 'b':
+    if mode == "b":
         # setting allow_pickle to False to reduce security risk and improve portability
         np.save(filename, feature_tensor, allow_pickle=False)
     else:
-        with open(filename, 'wt') as out_file:
+        with open(filename, "wt") as out_file:
             # Any line starting with "#" will be ignored by numpy.loadtxt
-            out_file.write('# Array shape: {0}\n'.format(feature_tensor.shape))
+            out_file.write("# Array shape: {0}\n".format(feature_tensor.shape))
 
             # iterating through a n dimensional array produces slices along
             # the first axis. This is equivalent to data[i,:,:] in this case
             for data_slice in feature_tensor:
-
                 # the formatting string indicates that I'm writing out
                 # the values in left-justified columns 7 characters in width
                 # with 2 decimal places.
-                np.savetxt(out_file, data_slice, fmt='%-5.2f')
+                np.savetxt(out_file, data_slice, fmt="%-5.2f")
 
                 # write out a break to indicate different slices...
-                out_file.write('# New slice\n')
+                out_file.write("# New slice\n")

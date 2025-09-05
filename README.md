@@ -18,41 +18,44 @@ Now install the `propermab` package with
 pip install -e propermab/
 ```
 
-## Installation with Docker (Linux)
+## Installation with Docker (Recommended)
 
-Alternatively, you can use Docker to simplify the installation process.
+Docker provides the simplest installation method with all dependencies pre-configured.
 
-1.  **Build the Docker image:**
-    ```bash
-    docker build -t propermab_image .
-    ```
+### 1. Build the Docker image:
+```bash
+docker build -t propermab_image .
+```
 
-2.  **Run the Docker container:**
-    ```bash
-    docker run -it --rm propermab_image
-    ```
-    This will start a bash session within the container where `propermab` and all its dependencies are installed. The `default_config.json` file inside the container is already configured for the Docker environment.
+### 2. Run feature calculations:
 
-    If you need to access files from your host machine (e.g., PDB files, sequence files, or save output files), you can mount a volume:
-    ```bash
-    docker run -it --rm -v /path/on/host:/data_on_host propermab_image
-    ```
-    Replace `/path/on/host` with the actual path to the directory on your host machine. Inside the container, this directory will be accessible at `/data_on_host`.
+**For the included pembrolizumab example:**
+```bash
+docker run --rm -v $(pwd):/mnt/host -w /app propermab_image python /mnt/host/scripts/pembrolizumab.py
+```
 
-    You can then run `propermab` scripts or use its Python API within this container. For example, to run an example script that uses a PDB file from your mounted volume:
-    ```python
-    # Inside the Docker container's Python interpreter
-    from propermab import defaults
-    from propermab.features import feature_utils
+**To create your own calculation scripts:**
+1. Create a Python script in the `scripts/` folder
+2. Run it with:
+```bash
+docker run --rm -v $(pwd):/mnt/host -w /app propermab_image python /mnt/host/scripts/your_script.py
+```
 
-    # The default_config.json is already set up in the Docker image
-    # No need to call defaults.system_config.update_from_json() unless you have a custom config
+**Key points:**
+- Results will be saved to the `output/` directory on your host machine
+- All dependencies (NanoShaper, APBS, etc.) are pre-installed and configured
+- No additional setup required - just build and run
+- The container automatically detects the environment and uses appropriate configurations
 
-    mol_feature = feature_utils.calculate_features_from_pdb('/data_on_host/your_pdb_file.pdb')
-    print(mol_feature)
-    ```
+### 3. Output
+
+Calculation results are automatically saved as JSON files in the `output/` directory, containing:
+- Calculated molecular features
+- Calculation metadata (time, protein info, etc.)
+- Feature values for analysis
 
 ### APBS
+
 The APBS tool v3.0.0 is used by `propermab` to calculate electrostatic potentials. Download the tool and unzip it to a directory of your choice.
 ```bash
 wget https://github.com/Electrostatics/apbs/releases/download/v3.0.0/APBS-3.0.0_Linux.zip -O apbs.zip
@@ -61,6 +64,7 @@ unzip apbs.zip
 Record the path to this directory as it will be used in the next step.
 
 ### Configuration
+
 Edit the `default_config.json` file to specify the path for each of the entries in the file
 ```python
 {
@@ -97,6 +101,7 @@ Finally, be sure to replace APBS_PATH with the actual path to the directory wher
 Now deactivate the readline environment and reactivate the propermab environment.
 
 ## Example
+
 ### Using `propermab` Python API
 You can calculate the molecular features directly from a structure PDB file. Note that this assumes that the residues in PDB file are IMGT numbered and that the heavy chain is named H and the light chain is named L.
 ```python
@@ -118,9 +123,11 @@ heavy_seq = 'HEAVY_SEQ'
 light_seq = 'LIGHT_SEQ'
 mol_features = feature_utils.get_all_mol_features(heavy_seq, light_seq, num_runs=1)
 ```
+
 Be sure to replace HEAVY_SEQ and LIGHT_SEQ with the actual sequences. Different runs of `ABodyBuilder2` can result in some difference in sidechain conformations due to the relaxation step in `ABodyBuilder2`. This in turn can affect values of some of the molecular features `propermab` calculates. If the average feature value across multiple runs is desired, one can increase `num_runs`. `get_all_mol_features()` returns a Python dictionary in which the keys are feature names and the values are the corresponding lists of feature values from multiple runs.
 
 The following code demonstrates how to calculate the set of sequence-based features, assuming that the sequences are for the Fv domains, the isotype is IgG1, and the type of the light chain is lambda.
+
 ```python
 from propermab import defaults
 from propermab.features import feature_utils
@@ -134,5 +141,34 @@ seq_features = feature_utils.get_all_seq_features(
 )
 ```
 
+## Command-Line Interface (CLI) for FASTA files
+
+For quick analysis directly from antibody sequences, you can use the command-line script `scripts/cli.py`. 
+
+### Example (Docker)
+
+Using Docker is the recommended method as it ensures all dependencies are correctly configured.
+
+#### Single Antibody
+
+```bash
+docker run --rm -v $(pwd):/mnt/host -w /app propermab_image python /mnt/host/scripts/cli.py \
+    --heavy /mnt/host/examples/pembrolizumab_heavy.fasta \
+    --light /mnt/host/examples/pembrolizumab_light.fasta \
+    --output /mnt/host/output/pembrolizumab_cli_results.csv \
+    --name pembrolizumab
+```
+
+#### Batch Processing
+
+```bash
+docker run --rm -v $(pwd):/mnt/host -w /app propermab_image python /mnt/host/scripts/cli.py \
+    --input-csv /mnt/host/examples/antibodies.csv \
+    --output /mnt/host/output/batch_results.csv
+```
+
+The results will be saved in the `output/` directory on your local machine.
+
 ## Third-party software
+
 `propermab` requires separate installation of third party software which may carry their own license requirements, and should be reviewed by the user prior to installation and use

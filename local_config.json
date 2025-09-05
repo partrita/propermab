@@ -1,0 +1,10 @@
+{
+    "hmmer_binary_path" : "/usr/local/bin",
+    "nanoshaper_binary_path" : "/usr/local/bin/NanoShaper",
+    "apbs_binary_path" : "/usr/local/bin/apbs",
+    "pdb2pqr_path" : "/usr/local/bin/pdb2pqr",
+    "multivalue_binary_path" : "/usr/local/bin/multivalue",
+    "immunebuilder_weights_dir" : "",
+    "atom_radii_file" : "./data/amber.siz",
+    "apbs_ld_library_paths" : ["/usr/local/lib/"]
+}

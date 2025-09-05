@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     cmake \
     git \
+    libncurses5 \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy project files
@@ -34,8 +35,6 @@ RUN /bin/bash -c "source activate propermab && \
     'numba>=0.50' \
     pdb2pqr \
     pip \
-    ipython \
-    jupyterlab \
     -y"
 
 # Create separate readline environment for readline 7.0
@@ -71,21 +70,7 @@ RUN /bin/bash -c "source activate propermab && \
 RUN /bin/bash -c "source activate propermab && pip install -e ."
 
 # Setup amber.siz file for NanoShaper
-RUN mkdir -p /app/APBS-3.0.0.Linux/share/apbs/tools/pdb2pqr/dat/ && \
-    /bin/bash -c ' \
-    if find /app/APBS-3.0.0.Linux -name "amber.siz" -type f | head -1 | xargs -I {} cp {} /app/APBS-3.0.0.Linux/share/apbs/tools/pdb2pqr/dat/ 2>/dev/null; then \
-        echo "Found amber.siz in APBS installation"; \
-    else \
-        echo "Creating amber.siz file with basic AMBER parameters"; \
-        echo "# AMBER atom radii file" > /app/APBS-3.0.0.Linux/share/apbs/tools/pdb2pqr/dat/amber.siz; \
-        echo "# Basic radii for common atoms" >> /app/APBS-3.0.0.Linux/share/apbs/tools/pdb2pqr/dat/amber.siz; \
-        echo "H    1.20" >> /app/APBS-3.0.0.Linux/share/apbs/tools/pdb2pqr/dat/amber.siz; \
-        echo "C    1.70" >> /app/APBS-3.0.0.Linux/share/apbs/tools/pdb2pqr/dat/amber.siz; \
-        echo "N    1.55" >> /app/APBS-3.0.0.Linux/share/apbs/tools/pdb2pqr/dat/amber.siz; \
-        echo "O    1.52" >> /app/APBS-3.0.0.Linux/share/apbs/tools/pdb2pqr/dat/amber.siz; \
-        echo "P    1.80" >> /app/APBS-3.0.0.Linux/share/apbs/tools/pdb2pqr/dat/amber.siz; \
-        echo "S    1.80" >> /app/APBS-3.0.0.Linux/share/apbs/tools/pdb2pqr/dat/amber.siz; \
-    fi'
+COPY amber.siz /app/APBS-3.0.0.Linux/share/apbs/tools/pdb2pqr/dat/amber.siz
 
 # Create optimized default_config.json for Docker environment
 RUN echo '{ \
@@ -110,13 +95,10 @@ RUN echo '#!/bin/bash\nsource activate propermab\nexec "$@"' > /app/entrypoint.s
 # Set entrypoint to activate conda environment
 ENTRYPOINT ["/app/entrypoint.sh"]
 
-# Default command
-CMD ["/bin/bash"]
-
-# Expose any necessary ports (if needed for web interfaces)
-# EXPOSE 8080
+# Default command shows help
+CMD ["python", "-c", "print('PROPERMAB Docker Container\\nUsage: docker run --rm -v $(pwd):/mnt/host -w /app propermab_image python /mnt/host/scripts/pembrolizumab.py')"]
 
 # Add labels for better maintainability
 LABEL maintainer="propermab-team"
 LABEL description="Docker image for PROPERMAB - molecular features and properties prediction for monoclonal antibodies"
-LABEL version="0.1.0"
+LABEL version="0.2.0"

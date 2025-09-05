@@ -8,54 +8,54 @@
 #
 # “Regeneron” refers to Regeneron Pharmaceuticals, Inc.
 #
-# Regeneron hereby grants You a right to use, reproduce, modify, or distribute the PROPERMAB source 
-# code, in whole or in part, whether in original or modified form, for academic research purposes only. 
-# The foregoing right is royalty-free, worldwide (subject to applicable laws of the United States), 
+# Regeneron hereby grants You a right to use, reproduce, modify, or distribute the PROPERMAB source
+# code, in whole or in part, whether in original or modified form, for academic research purposes only.
+# The foregoing right is royalty-free, worldwide (subject to applicable laws of the United States),
 # revocable, non-exclusive, and non-transferable.
 #
-# Prohibited Uses: The rights granted herein do not include any right to use by commercial entities 
-# or commercial use of any kind, including, without limitation, (1) any integration into other code 
-# or software that is used for further commercialization, (2) any reproduction, copy, modification 
-# or creation of a derivative work that is then incorporated into a commercial product or service or 
-# otherwise used for any commercial purpose, (3) distribution of the source code, in whole or in part, 
-# or any resulting executables, in any commercial product, or (4) use of the source code, in whole 
+# Prohibited Uses: The rights granted herein do not include any right to use by commercial entities
+# or commercial use of any kind, including, without limitation, (1) any integration into other code
+# or software that is used for further commercialization, (2) any reproduction, copy, modification
+# or creation of a derivative work that is then incorporated into a commercial product or service or
+# otherwise used for any commercial purpose, (3) distribution of the source code, in whole or in part,
+# or any resulting executables, in any commercial product, or (4) use of the source code, in whole
 # or in part, or any resulting executables, in any commercial online service.
 #
-# Except as expressly provided for herein, nothing in this License grants to You any right, title or 
-# interest in and to the intellectual property of Regeneron (either expressly or by implication or estoppel).  
-# Notwithstanding anything else in this License, nothing contained herein shall limit or compromise 
-# the rights of Regeneron with respect to its own intellectual property or limit its freedom to practice 
+# Except as expressly provided for herein, nothing in this License grants to You any right, title or
+# interest in and to the intellectual property of Regeneron (either expressly or by implication or estoppel).
+# Notwithstanding anything else in this License, nothing contained herein shall limit or compromise
+# the rights of Regeneron with respect to its own intellectual property or limit its freedom to practice
 # and to develop its products and product candidates.
 #
-# If the source code, whole or in part and in original or modified form, is reproduced, shared or 
-# distributed in any manner, it must (1) identify Regeneron Pharmaceuticals, Inc. as the original 
-# creator, (2) retain any copyright or other proprietary notices of Regeneron, (3) include a copy 
+# If the source code, whole or in part and in original or modified form, is reproduced, shared or
+# distributed in any manner, it must (1) identify Regeneron Pharmaceuticals, Inc. as the original
+# creator, (2) retain any copyright or other proprietary notices of Regeneron, (3) include a copy
 # of the terms of this License.
 #
-# TO THE GREATEST EXTENT PERMITTED UNDER APPLICABLE LAW, THE SOURCE CODE (AND ANY DOCUMENTATION) IS 
-# PROVIDED ON AN “AS-IS” BASIS, AND REGENERON PHARMACEUTICALS, INC. EXPRESSLY DISCLAIMS ALL 
-# REPRESENTATIONS, WARRANTIES, AND CONDITIONS WITH RESPECT THERETO OF ANY KIND CONCERNING THE SOURCE 
-# CODE, IN WHOLE OR IN PART AND IN ORIGINAL OR MODIFIED FORM, WHETHER EXPRESS, IMPLIED, STATUTORY, OR 
-# OTHER REPRESENTATIONS, WARRANTIES AND CONDITIONS, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE, 
-# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, 
-# ACCURACY, COMPLETENESS, RIGHT TO QUIET ENJOYMENT, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR 
-# NOT KNOWN OR DISCOVERABLE.  REGENERON DOES NOT WARRANT THAT THE SOURCE CODE WILL OPERATE IN AN 
-# UNINTERRUPTED FASHION AND DATA MAY BE LOST OR UNRECOVERABLE. IN THE EVENT ANY OF THE PRIOR DISCLAIMERS 
-# ARE UNENFORCEABLE UNDER APPLICABLE LAW, THE LICENSES GRANTED HEREIN WILL IMMEDIATELY BE NULL AND 
+# TO THE GREATEST EXTENT PERMITTED UNDER APPLICABLE LAW, THE SOURCE CODE (AND ANY DOCUMENTATION) IS
+# PROVIDED ON AN “AS-IS” BASIS, AND REGENERON PHARMACEUTICALS, INC. EXPRESSLY DISCLAIMS ALL
+# REPRESENTATIONS, WARRANTIES, AND CONDITIONS WITH RESPECT THERETO OF ANY KIND CONCERNING THE SOURCE
+# CODE, IN WHOLE OR IN PART AND IN ORIGINAL OR MODIFIED FORM, WHETHER EXPRESS, IMPLIED, STATUTORY, OR
+# OTHER REPRESENTATIONS, WARRANTIES AND CONDITIONS, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE,
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,
+# ACCURACY, COMPLETENESS, RIGHT TO QUIET ENJOYMENT, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR
+# NOT KNOWN OR DISCOVERABLE.  REGENERON DOES NOT WARRANT THAT THE SOURCE CODE WILL OPERATE IN AN
+# UNINTERRUPTED FASHION AND DATA MAY BE LOST OR UNRECOVERABLE. IN THE EVENT ANY OF THE PRIOR DISCLAIMERS
+# ARE UNENFORCEABLE UNDER APPLICABLE LAW, THE LICENSES GRANTED HEREIN WILL IMMEDIATELY BE NULL AND
 # VOID AND YOU SHALL IMMEDIATELY RETURN TO REGENERON THE SOURCE CODE OR DESTROY IT.
 #
-# IN NO CASE SHALL REGENERON BE LIABLE FOR ANY LOSS, CLAIM, DAMAGE, OR EXPENSES, OF ANY KIND, WHICH 
-# MAY ARISE FROM OR IN CONNECTION WITH THIS LICENSE OR THE USE OF THE SOURCE CODE. YOU WAIVE AND 
-# RELEASE REGENERON FOREVER FROM ANY LIABILITY AND YOU SHALL INDEMNIFY AND HOLD REGENERON, ITS AFFILAITES 
-# AND ITS AND THEIR EMPLOYEES AND AGENTS HARMLESS FROM ANY LOSS, CLAIM, DAMAGE, EXPENSES, OR LIABILITY, 
-# OF ANY KIND, FROM A THIRD-PARTY WHICH MAY ARISE FROM OR IN CONNECTION WITH THIS LICENSE OR YOUR USE 
+# IN NO CASE SHALL REGENERON BE LIABLE FOR ANY LOSS, CLAIM, DAMAGE, OR EXPENSES, OF ANY KIND, WHICH
+# MAY ARISE FROM OR IN CONNECTION WITH THIS LICENSE OR THE USE OF THE SOURCE CODE. YOU WAIVE AND
+# RELEASE REGENERON FOREVER FROM ANY LIABILITY AND YOU SHALL INDEMNIFY AND HOLD REGENERON, ITS AFFILAITES
+# AND ITS AND THEIR EMPLOYEES AND AGENTS HARMLESS FROM ANY LOSS, CLAIM, DAMAGE, EXPENSES, OR LIABILITY,
+# OF ANY KIND, FROM A THIRD-PARTY WHICH MAY ARISE FROM OR IN CONNECTION WITH THIS LICENSE OR YOUR USE
 # OF THE SOURCE CODE.
 
-# You agree that this License and its terms are governed by the laws of the State of New York, without 
-# regard to choice of law rules and the United Nations Convention on the International Sale of Goods 
+# You agree that this License and its terms are governed by the laws of the State of New York, without
+# regard to choice of law rules and the United Nations Convention on the International Sale of Goods
 # shall not apply.
 #
-# Please reach out to Regeneron Pharmaceuticals Inc./Administrator relating to any non-academic or 
+# Please reach out to Regeneron Pharmaceuticals Inc./Administrator relating to any non-academic or
 # commercial use of the source code.
 from typing import Union, List, Dict
 
@@ -80,6 +80,7 @@ class SurfaceVertex:
     """Place-holding class, might be useful to make the surface.py module more
     object-oriented.
     """
+
     def __init__(self, vertex_coord, vertex_id, atom=None, residue=None, features=None):
         self.vertex_coord = vertex_coord
         self.vertex_id = vertex_id
@@ -89,9 +90,15 @@ class SurfaceVertex:
 
 
 class TriangleFace:
-    def __init__(self, coords: npt.ArrayLike, vertices: List[int] = None,
-                 face_id: int = None, atom: Atom = None,
-                 residue: Residue = None, features: np.ndarray = None):
+    def __init__(
+        self,
+        coords: npt.ArrayLike,
+        vertices: List[int] = None,
+        face_id: int = None,
+        atom: Atom = None,
+        residue: Residue = None,
+        features: np.ndarray = None,
+    ):
         """A class representing the triangle face.
 
         Parameters
@@ -125,8 +132,7 @@ class TriangleFace:
         if self._area is None:
             # the cross product of two sides is a normal vector
             normal = np.cross(
-                self.coords[1] - self.coords[0],
-                self.coords[2] - self.coords[0]
+                self.coords[1] - self.coords[0], self.coords[2] - self.coords[0]
             )
             # the norm of the cross product of two sides is twice the area
             self._area = np.linalg.norm(normal) / 2
@@ -140,8 +146,13 @@ class TriangleFace:
 
 
 class SurfacePatch:
-    def __init__(self, vertices: npt.ArrayLike, faces: List[TriangleFace],
-                 prop: str = None, name: str = None):
+    def __init__(
+        self,
+        vertices: npt.ArrayLike,
+        faces: List[TriangleFace],
+        prop: str = None,
+        name: str = None,
+    ):
         """A class representing surface patches.
 
         Parameters
@@ -225,14 +236,16 @@ class SurfacePatch:
                 for v in patch_boundary_vertices:
                     if v not in largest_component:
                         continue
-                    dist = nx.shortest_path_length(surf_graph, u, v, weight='length')
+                    dist = nx.shortest_path_length(surf_graph, u, v, weight="length")
                     if dist < shortest_dist_to_cdr:
                         shortest_dist_to_cdr = dist
             patch_to_cdr_distances[cdr] = shortest_dist_to_cdr
 
         return patch_to_cdr_distances
 
-    def is_near_cdr(self, cdr_vertices: dict, surf_graph: nx.Graph, dist_cutoff: float = 5.) -> bool:
+    def is_near_cdr(
+        self, cdr_vertices: dict, surf_graph: nx.Graph, dist_cutoff: float = 5.0
+    ) -> bool:
         """Determine whether this surface patch is near CDR. If the geodesic distance between
         any pair of vertices from `cdr_vertices` and vertices of this patch is below `dist_cutoff`,
         then this patch is considered near CDR.
@@ -269,12 +282,14 @@ class SurfacePatch:
                 for v in patch_boundary_vertices:
                     if v not in largest_component:
                         continue
-                    dist = nx.shortest_path_length(surf_graph, u, v, weight='length')
+                    dist = nx.shortest_path_length(surf_graph, u, v, weight="length")
                     if dist <= dist_cutoff:
                         return True
         return False
 
-    def is_near_cdr_kd_tree(self, cdr_vertex_coords: dict, dist_cutoff: float = 5.0) -> bool:
+    def is_near_cdr_kd_tree(
+        self, cdr_vertex_coords: dict, dist_cutoff: float = 5.0
+    ) -> bool:
         """KDTree based algorithm for determining if a surface patch is near a CDR region.
 
         Two KD trees are constructed. One for the surface patch, the other for the CDR region.
@@ -300,7 +315,7 @@ class SurfacePatch:
 
         """
         if self.vertex_coords is None:
-            raise ValueError('No valid vertex coordinates. Set coordinates first!')
+            raise ValueError("No valid vertex coordinates. Set coordinates first!")
 
         patch_kd_tree = spatial.KDTree(self.vertex_coords)
         for cdr, cdr_coords in cdr_vertex_coords.items():
@@ -313,9 +328,14 @@ class SurfacePatch:
 
 
 class Surface:
-    def __init__(self, vertices: npt.ArrayLike, faces: List[List],
-                 vertex_atom_ids: List[int] = None,
-                 struct: Model = None, apbs_values: List[float] = None):
+    def __init__(
+        self,
+        vertices: npt.ArrayLike,
+        faces: List[List],
+        vertex_atom_ids: List[int] = None,
+        struct: Model = None,
+        apbs_values: List[float] = None,
+    ):
         """A class representing the surface of a protein.
 
         Parameters
@@ -368,7 +388,9 @@ class Surface:
             self._triangle_faces = all_triangle_faces
         return self._triangle_faces
 
-    def find_residue_vertices(self, residue: Residue = None) -> Union[Dict[Residue, List], List]:
+    def find_residue_vertices(
+        self, residue: Residue = None
+    ) -> Union[Dict[Residue, List], List]:
         """Finds all the vertices belonging to the requested residue.
 
         Each line in the NanoShaper .vert file represents a vertex. The line has the Cartesian
@@ -407,11 +429,13 @@ class Surface:
             for res, vertices in residue_vertices.items():
                 if res.id[1] == residue:
                     return vertices
-            raise ValueError(f'{residue} not found!')
+            raise ValueError(f"{residue} not found!")
         else:
-            raise ValueError(f'{residue} is invalid!')
+            raise ValueError(f"{residue} is invalid!")
 
-    def vertex_to_residue(self, vertex_index: int = None) -> Union[List[Residue], Residue]:
+    def vertex_to_residue(
+        self, vertex_index: int = None
+    ) -> Union[List[Residue], Residue]:
         """Get the residue to which the given vertex is assigned.
 
         Parameters
@@ -436,8 +460,9 @@ class Surface:
         else:
             return vertex_residues
 
-    def find_residue_faces(self, residue: Union[Residue, int] = None,
-                           return_coords: bool = False) -> Union[Dict[Residue, List], List]:
+    def find_residue_faces(
+        self, residue: Union[Residue, int] = None, return_coords: bool = False
+    ) -> Union[Dict[Residue, List], List]:
         """Finds all the triangular faces belonging to the requested residue.
 
         A triangular face is assigned to a residue if the residue has the maximum number
@@ -497,9 +522,9 @@ class Surface:
             for res, res_faces in residue_faces.items():
                 if res.id[1] == residue:
                     return res_faces
-            raise ValueError(f'{residue} not found!')
+            raise ValueError(f"{residue} not found!")
         else:
-            raise ValueError(f'{residue} is invalid!')
+            raise ValueError(f"{residue} is invalid!")
 
     def _get_face_coords(self, face: List = None) -> npt.ArrayLike:
         """Get the Cartesian coordinates of the three vertices of the face.
@@ -535,7 +560,7 @@ class Surface:
 
         """
         prop_name = prop.lower()[:3]
-        if prop_name == 'hyd':
+        if prop_name == "hyd":
             prop_values = self.hyd_potential()
         else:
             prop_values = self.apbs_values
@@ -559,7 +584,7 @@ class Surface:
         edge_list = set(edges)
         vertex_graph = nx.from_edgelist(edge_list)
         for source, target in edge_list:
-            vertex_graph[source][target]['length'] = np.linalg.norm(
+            vertex_graph[source][target]["length"] = np.linalg.norm(
                 self.vertices[target - 1] - self.vertices[source - 1]
             )
         return vertex_graph
@@ -586,7 +611,7 @@ class Surface:
                     edge_list.append((i, j))
         return nx.from_edgelist(edge_list)
 
-    def hyd_potential(self, r_cutoff: float = 5., alpha: float = 1.5) -> npt.ArrayLike:
+    def hyd_potential(self, r_cutoff: float = 5.0, alpha: float = 1.5) -> npt.ArrayLike:
         """Computes the hydrophobic potential at each one of the vertices of the surface.
 
         Parameters
@@ -608,20 +633,24 @@ class Surface:
         crippen_atom_types = []
         for atom in all_atoms:
             # C-terminal oxygen atom
-            if atom.name == 'OXT':
-                crippen_atom_types.append('O12')
+            if atom.name == "OXT":
+                crippen_atom_types.append("O12")
             # N-terminal hydrogen atoms
-            elif atom.name == 'H2' or atom.name == 'H3':
-                crippen_atom_types.append('H3')
+            elif atom.name == "H2" or atom.name == "H3":
+                crippen_atom_types.append("H3")
             else:
                 crippen_atom_types.append(
                     PDB_TO_CRIPPEN[(atom.parent.resname, atom.name)]
                 )
         atom_logps = [CRIPPEN_PARAMS[a_type][0] for a_type in crippen_atom_types]
-        hyd_pot_evaluator = HeidenHydrophobicPotential(atom_coords, atom_logps, r_cutoff, alpha)
+        hyd_pot_evaluator = HeidenHydrophobicPotential(
+            atom_coords, atom_logps, r_cutoff, alpha
+        )
         return hyd_pot_evaluator.evaluate(self.vertices)
 
-    def heiden_score(self, r_cutoff: float = 5., alpha: float = 1.5, hyd_scale: str = 'CRIPPEN'):
+    def heiden_score(
+        self, r_cutoff: float = 5.0, alpha: float = 1.5, hyd_scale: str = "CRIPPEN"
+    ):
         """Implemented according to https://pubmed.ncbi.nlm.nih.gov/36120542/
 
         Parameters
@@ -640,11 +669,15 @@ class Surface:
             for vertex_id in face.vertices:
                 vertex_areas[vertex_id - 1] += face.area / 3
 
-        return np.sum([
-            a * p for a, p in zip(vertex_areas, self.hyd_potential(r_cutoff, alpha)) if p > 0.
-        ])
+        return np.sum(
+            [
+                a * p
+                for a, p in zip(vertex_areas, self.hyd_potential(r_cutoff, alpha))
+                if p > 0.0
+            ]
+        )
 
-    def find_cdr_vertices(self, numbering_scheme: str = 'IMGT') -> Dict[str, List]:
+    def find_cdr_vertices(self, numbering_scheme: str = "IMGT") -> Dict[str, List]:
         """Find the vertices that belong to CDR regions.
 
         A vertex belongs to CDR regions if the residue it belongs to is within
@@ -662,9 +695,9 @@ class Surface:
             A dict keyed by CDR loop IDs.
 
         """
-        if numbering_scheme.upper() == 'IMGT':
+        if numbering_scheme.upper() == "IMGT":
             cdr_boundaries = numbering.IMGT_SCHEME
-        elif numbering_scheme.upper() == 'KABAT':
+        elif numbering_scheme.upper() == "KABAT":
             cdr_boundaries = numbering.KABAT_SCHEME
         else:
             cdr_boundaries = numbering.CHOTHIA_SCHEME
@@ -684,7 +717,7 @@ class Surface:
 
         return cdr_vertices
 
-    def find_cdr_faces(self, numbering_scheme: str = 'IMGT') -> Dict[str, List]:
+    def find_cdr_faces(self, numbering_scheme: str = "IMGT") -> Dict[str, List]:
         """Find the triangular faces that belong to CDR regions.
 
         A triangular face belongs to CDR regions if the residue it belongs to is within
@@ -703,9 +736,9 @@ class Surface:
             (triangle face, area) pairs.
 
         """
-        if numbering_scheme.upper() == 'IMGT':
+        if numbering_scheme.upper() == "IMGT":
             cdr_boundaries = numbering.IMGT_SCHEME
-        elif numbering_scheme.upper() == 'KABAT':
+        elif numbering_scheme.upper() == "KABAT":
             cdr_boundaries = numbering.KABAT_SCHEME
         else:
             cdr_boundaries = numbering.CHOTHIA_SCHEME
@@ -732,16 +765,24 @@ class Surface:
         return self._total_area
 
     def total_hyd_area(self):
-        total = 0.
+        total = 0.0
         vertex_hyd_potentials = self.hyd_potential()
         for face in self.triangle_faces:
-            face_hyd_potential = np.mean([vertex_hyd_potentials[i - 1] for i in face.vertices])
-            if face_hyd_potential > 0.:
+            face_hyd_potential = np.mean(
+                [vertex_hyd_potentials[i - 1] for i in face.vertices]
+            )
+            if face_hyd_potential > 0.0:
                 total += face.area
         return total
 
-    def find_patches_dbscan(self, prop: str, prop_cutoff: float, eps: float = 2.,
-                            min_samples: int = 10, area_cutoff: float = 30.) -> dict:
+    def find_patches_dbscan(
+        self,
+        prop: str,
+        prop_cutoff: float,
+        eps: float = 2.0,
+        min_samples: int = 10,
+        area_cutoff: float = 30.0,
+    ) -> dict:
         """Finds surface patches based on the DBSCAN clustering algorithm.
 
         Parameters
@@ -777,22 +818,22 @@ class Surface:
 
         prop_name = prop.lower()[:3]
         thresholded_faces = []
-        if prop_name == 'pos' or prop_name == 'hyd':
+        if prop_name == "pos" or prop_name == "hyd":
             for face, feature in zip(triangle_faces, face_features):
                 if feature >= prop_cutoff:
                     thresholded_faces.append(face)
-            if prop_name == 'pos':
-                patch_prefix = 'pos_patch'
+            if prop_name == "pos":
+                patch_prefix = "pos_patch"
             else:
-                patch_prefix = 'hyd_patch'
+                patch_prefix = "hyd_patch"
         else:
             for face, feature in zip(triangle_faces, face_features):
                 if feature <= prop_cutoff:
                     thresholded_faces.append(face)
-            patch_prefix = 'neg_patch'
+            patch_prefix = "neg_patch"
 
         if len(thresholded_faces) == 0:
-            raise ValueError(f'No triangle faces met prop_cutoff = {prop_cutoff}!')
+            raise ValueError(f"No triangle faces met prop_cutoff = {prop_cutoff}!")
 
         # clustering
         thresholded_centers = np.array([f.center for f in thresholded_faces])
@@ -804,7 +845,7 @@ class Surface:
         for face, label in zip(thresholded_faces, face_dbscan.labels_):
             if label == -1:  # skip noise
                 continue
-            patch_label = f'{patch_prefix}_{label}'
+            patch_label = f"{patch_prefix}_{label}"
             if patch_label not in patches:
                 patches[patch_label] = [(face.vertices, face.area)]
             else:
@@ -822,7 +863,9 @@ class Surface:
         else:
             return patches
 
-    def find_patches_graph(self, prop: str, prop_cutoff: float, area_cutoff: float = 40.) -> dict:
+    def find_patches_graph(
+        self, prop: str, prop_cutoff: float, area_cutoff: float = 40.0
+    ) -> dict:
         """Finds surface patches using graph algorithms.
 
         A set of surface triangles form a patch if they are a
@@ -854,7 +897,7 @@ class Surface:
         thresholded_nodes = []
         for face_node in face_graph.nodes():
             feature = face_features[face_node - 1]
-            if prop.lower()[:3] == 'pos' or prop.lower()[:3] == 'hyd':
+            if prop.lower()[:3] == "pos" or prop.lower()[:3] == "hyd":
                 if feature > prop_cutoff:
                     thresholded_nodes.append(face_node)
             else:
@@ -875,7 +918,7 @@ class Surface:
         for component in sorted(
             nx.connected_components(thresholded_graph), key=len, reverse=True
         ):
-            patch_area = 0.
+            patch_area = 0.0
             patch_faces = []
             for face_id in component:
                 face_vertices = self.triangle_faces[face_id - 1].vertices
@@ -884,7 +927,7 @@ class Surface:
                 patch_faces.append((face_vertices, face_area))
             if patch_area >= area_cutoff:
                 patch_id += 1
-                patch_label = f'patch_{patch_id}'
+                patch_label = f"patch_{patch_id}"
                 patches[patch_label] = patch_faces
 
         return patches

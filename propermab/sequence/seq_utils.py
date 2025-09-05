@@ -8,54 +8,54 @@
 #
 # “Regeneron” refers to Regeneron Pharmaceuticals, Inc.
 #
-# Regeneron hereby grants You a right to use, reproduce, modify, or distribute the PROPERMAB source 
-# code, in whole or in part, whether in original or modified form, for academic research purposes only. 
-# The foregoing right is royalty-free, worldwide (subject to applicable laws of the United States), 
+# Regeneron hereby grants You a right to use, reproduce, modify, or distribute the PROPERMAB source
+# code, in whole or in part, whether in original or modified form, for academic research purposes only.
+# The foregoing right is royalty-free, worldwide (subject to applicable laws of the United States),
 # revocable, non-exclusive, and non-transferable.
 #
-# Prohibited Uses: The rights granted herein do not include any right to use by commercial entities 
-# or commercial use of any kind, including, without limitation, (1) any integration into other code 
-# or software that is used for further commercialization, (2) any reproduction, copy, modification 
-# or creation of a derivative work that is then incorporated into a commercial product or service or 
-# otherwise used for any commercial purpose, (3) distribution of the source code, in whole or in part, 
-# or any resulting executables, in any commercial product, or (4) use of the source code, in whole 
+# Prohibited Uses: The rights granted herein do not include any right to use by commercial entities
+# or commercial use of any kind, including, without limitation, (1) any integration into other code
+# or software that is used for further commercialization, (2) any reproduction, copy, modification
+# or creation of a derivative work that is then incorporated into a commercial product or service or
+# otherwise used for any commercial purpose, (3) distribution of the source code, in whole or in part,
+# or any resulting executables, in any commercial product, or (4) use of the source code, in whole
 # or in part, or any resulting executables, in any commercial online service.
 #
-# Except as expressly provided for herein, nothing in this License grants to You any right, title or 
-# interest in and to the intellectual property of Regeneron (either expressly or by implication or estoppel).  
-# Notwithstanding anything else in this License, nothing contained herein shall limit or compromise 
-# the rights of Regeneron with respect to its own intellectual property or limit its freedom to practice 
+# Except as expressly provided for herein, nothing in this License grants to You any right, title or
+# interest in and to the intellectual property of Regeneron (either expressly or by implication or estoppel).
+# Notwithstanding anything else in this License, nothing contained herein shall limit or compromise
+# the rights of Regeneron with respect to its own intellectual property or limit its freedom to practice
 # and to develop its products and product candidates.
 #
-# If the source code, whole or in part and in original or modified form, is reproduced, shared or 
-# distributed in any manner, it must (1) identify Regeneron Pharmaceuticals, Inc. as the original 
-# creator, (2) retain any copyright or other proprietary notices of Regeneron, (3) include a copy 
+# If the source code, whole or in part and in original or modified form, is reproduced, shared or
+# distributed in any manner, it must (1) identify Regeneron Pharmaceuticals, Inc. as the original
+# creator, (2) retain any copyright or other proprietary notices of Regeneron, (3) include a copy
 # of the terms of this License.
 #
-# TO THE GREATEST EXTENT PERMITTED UNDER APPLICABLE LAW, THE SOURCE CODE (AND ANY DOCUMENTATION) IS 
-# PROVIDED ON AN “AS-IS” BASIS, AND REGENERON PHARMACEUTICALS, INC. EXPRESSLY DISCLAIMS ALL 
-# REPRESENTATIONS, WARRANTIES, AND CONDITIONS WITH RESPECT THERETO OF ANY KIND CONCERNING THE SOURCE 
-# CODE, IN WHOLE OR IN PART AND IN ORIGINAL OR MODIFIED FORM, WHETHER EXPRESS, IMPLIED, STATUTORY, OR 
-# OTHER REPRESENTATIONS, WARRANTIES AND CONDITIONS, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE, 
-# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, 
-# ACCURACY, COMPLETENESS, RIGHT TO QUIET ENJOYMENT, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR 
-# NOT KNOWN OR DISCOVERABLE.  REGENERON DOES NOT WARRANT THAT THE SOURCE CODE WILL OPERATE IN AN 
-# UNINTERRUPTED FASHION AND DATA MAY BE LOST OR UNRECOVERABLE. IN THE EVENT ANY OF THE PRIOR DISCLAIMERS 
-# ARE UNENFORCEABLE UNDER APPLICABLE LAW, THE LICENSES GRANTED HEREIN WILL IMMEDIATELY BE NULL AND 
+# TO THE GREATEST EXTENT PERMITTED UNDER APPLICABLE LAW, THE SOURCE CODE (AND ANY DOCUMENTATION) IS
+# PROVIDED ON AN “AS-IS” BASIS, AND REGENERON PHARMACEUTICALS, INC. EXPRESSLY DISCLAIMS ALL
+# REPRESENTATIONS, WARRANTIES, AND CONDITIONS WITH RESPECT THERETO OF ANY KIND CONCERNING THE SOURCE
+# CODE, IN WHOLE OR IN PART AND IN ORIGINAL OR MODIFIED FORM, WHETHER EXPRESS, IMPLIED, STATUTORY, OR
+# OTHER REPRESENTATIONS, WARRANTIES AND CONDITIONS, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE,
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,
+# ACCURACY, COMPLETENESS, RIGHT TO QUIET ENJOYMENT, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR
+# NOT KNOWN OR DISCOVERABLE.  REGENERON DOES NOT WARRANT THAT THE SOURCE CODE WILL OPERATE IN AN
+# UNINTERRUPTED FASHION AND DATA MAY BE LOST OR UNRECOVERABLE. IN THE EVENT ANY OF THE PRIOR DISCLAIMERS
+# ARE UNENFORCEABLE UNDER APPLICABLE LAW, THE LICENSES GRANTED HEREIN WILL IMMEDIATELY BE NULL AND
 # VOID AND YOU SHALL IMMEDIATELY RETURN TO REGENERON THE SOURCE CODE OR DESTROY IT.
 #
-# IN NO CASE SHALL REGENERON BE LIABLE FOR ANY LOSS, CLAIM, DAMAGE, OR EXPENSES, OF ANY KIND, WHICH 
-# MAY ARISE FROM OR IN CONNECTION WITH THIS LICENSE OR THE USE OF THE SOURCE CODE. YOU WAIVE AND 
-# RELEASE REGENERON FOREVER FROM ANY LIABILITY AND YOU SHALL INDEMNIFY AND HOLD REGENERON, ITS AFFILAITES 
-# AND ITS AND THEIR EMPLOYEES AND AGENTS HARMLESS FROM ANY LOSS, CLAIM, DAMAGE, EXPENSES, OR LIABILITY, 
-# OF ANY KIND, FROM A THIRD-PARTY WHICH MAY ARISE FROM OR IN CONNECTION WITH THIS LICENSE OR YOUR USE 
+# IN NO CASE SHALL REGENERON BE LIABLE FOR ANY LOSS, CLAIM, DAMAGE, OR EXPENSES, OF ANY KIND, WHICH
+# MAY ARISE FROM OR IN CONNECTION WITH THIS LICENSE OR THE USE OF THE SOURCE CODE. YOU WAIVE AND
+# RELEASE REGENERON FOREVER FROM ANY LIABILITY AND YOU SHALL INDEMNIFY AND HOLD REGENERON, ITS AFFILAITES
+# AND ITS AND THEIR EMPLOYEES AND AGENTS HARMLESS FROM ANY LOSS, CLAIM, DAMAGE, EXPENSES, OR LIABILITY,
+# OF ANY KIND, FROM A THIRD-PARTY WHICH MAY ARISE FROM OR IN CONNECTION WITH THIS LICENSE OR YOUR USE
 # OF THE SOURCE CODE.
 
-# You agree that this License and its terms are governed by the laws of the State of New York, without 
-# regard to choice of law rules and the United Nations Convention on the International Sale of Goods 
+# You agree that this License and its terms are governed by the laws of the State of New York, without
+# regard to choice of law rules and the United Nations Convention on the International Sale of Goods
 # shall not apply.
 #
-# Please reach out to Regeneron Pharmaceuticals Inc./Administrator relating to any non-academic or 
+# Please reach out to Regeneron Pharmaceuticals Inc./Administrator relating to any non-academic or
 # commercial use of the source code.
 import io
 from typing import Union, List
@@ -82,11 +82,11 @@ def get_uniprot_seq(uniprot_url: str) -> str:
         Sequence extracted as a str.
     """
     with io.StringIO(urlopen(uniprot_url).read().decode()) as handle:
-        seq_record = SeqIO.read(handle, format='fasta')
+        seq_record = SeqIO.read(handle, format="fasta")
     return str(seq_record.seq)
 
 
-def get_anarci_numbers(seq: str, scheme: str='imgt') -> list:
+def get_anarci_numbers(seq: str, scheme: str = "imgt") -> list:
     """Number the given sequence using ANARCI and return the numbers in a list.
 
     Parameters
@@ -102,15 +102,13 @@ def get_anarci_numbers(seq: str, scheme: str='imgt') -> list:
     list
         Residue numbers as numbered by ANARCI, in str type.
     """
-    numbering, _, _ = anarci(
-        [('input_seq', seq)], scheme=scheme, output=False
-    )
+    numbering, _, _ = anarci([("input_seq", seq)], scheme=scheme, output=False)
     # sequence, domain, domain numbering
     domain_numbering = numbering[0][0][0]
     seq_numbers = []
     for res_num, res in domain_numbering:
-        if res != '-':
-            res_num_str = ''.join([str(x) for x in res_num]).strip()
+        if res != "-":
+            res_num_str = "".join([str(x) for x in res_num]).strip()
             seq_numbers.append(res_num_str)
     return seq_numbers
 
@@ -138,33 +136,42 @@ def seq_to_gapped_seq_imgt(seq: str, imgt_numbers: list) -> str:
     """
     if len(seq) != len(imgt_numbers):
         raise ValueError(
-            'Inputs must be of the same length! ' 
-            f'seq length: {len(seq)}, imgt_numbers length: {len(imgt_numbers)}'
+            "Inputs must be of the same length! "
+            f"seq length: {len(seq)}, imgt_numbers length: {len(imgt_numbers)}"
         )
-        
-    ordered_allowed_imgt = [
-        # residues 1 through 111, inclusive
-        '{:d}'.format(i) for i in range(1, 112) 
-    ] + [
-        # residues 111A through 111M, inclusive
-        '111' + chr(65 + i) for i in range(13)
-    ] + [
-        # residues 112M through 112A inclusive
-        '112' + chr(65 + i) for i in range(13)
-    ][::-1] + [
-        # residues 112 through 128 inclusive
-        '{:d}'.format(i) for i in range(112, 129)
-    ]
+
+    ordered_allowed_imgt = (
+        [
+            # residues 1 through 111, inclusive
+            "{:d}".format(i)
+            for i in range(1, 112)
+        ]
+        + [
+            # residues 111A through 111M, inclusive
+            "111" + chr(65 + i)
+            for i in range(13)
+        ]
+        + [
+            # residues 112M through 112A inclusive
+            "112" + chr(65 + i)
+            for i in range(13)
+        ][::-1]
+        + [
+            # residues 112 through 128 inclusive
+            "{:d}".format(i)
+            for i in range(112, 129)
+        ]
+    )
 
     imgt_dict = {name: idx for idx, name in enumerate(ordered_allowed_imgt)}
-    out_seq = ['-'] * len(imgt_dict)
+    out_seq = ["-"] * len(imgt_dict)
     for aa, imgt_n in zip(seq, imgt_numbers):
         out_seq[imgt_dict[imgt_n]] = aa
 
-    return ''.join(out_seq)
+    return "".join(out_seq)
 
 
-def onehot_encode(gapped_seq: str, flatten: bool=False) -> np.ndarray:
+def onehot_encode(gapped_seq: str, flatten: bool = False) -> np.ndarray:
     """Onehot-encode the given sequence.
 
     Parameters
@@ -179,31 +186,28 @@ def onehot_encode(gapped_seq: str, flatten: bool=False) -> np.ndarray:
     np.ndarray
         A vector if flatten is True, otherwise a matrix.
     """
-    aa_to_idx = {
-        aa: idx for idx, aa in enumerate('ACDEFGHIKLMNPQRSTVWY' + '-')
-    }
-    
+    aa_to_idx = {aa: idx for idx, aa in enumerate("ACDEFGHIKLMNPQRSTVWY" + "-")}
+
     one_hot = np.zeros(shape=(len(gapped_seq), 21))
     for i, aa in enumerate(gapped_seq):
-        one_hot[i, aa_to_idx[aa]] = 1.
-    
+        one_hot[i, aa_to_idx[aa]] = 1.0
+
     if flatten:
         # by default the order is 'C', i.e. row-major
         return one_hot.flatten()
     return one_hot
 
 
-
 # Based on EMBOSS entry from this link: http://isoelectric.org/theory.html
 pKa_dict = {
-    'N_term': (8.6, 1),
-    'C_term': (3.6, -1),
-    'D': (3.9, -1),
-    'E': (4.1, -1),
-    'H': (6.5, 1),
-    'Y': (10.1, -1),
-    'K': (10.8, 1),
-    'R': (12.5, 1)
+    "N_term": (8.6, 1),
+    "C_term": (3.6, -1),
+    "D": (3.9, -1),
+    "E": (4.1, -1),
+    "H": (6.5, 1),
+    "Y": (10.1, -1),
+    "K": (10.8, 1),
+    "R": (12.5, 1),
 }
 
 
@@ -239,17 +243,17 @@ def calculate_pi(seq: Union[str, List[str]]) -> float:
     else:
         N_term_count = len(seq)
         C_term_count = len(seq)
-        full_seq = ''.join(seq)
+        full_seq = "".join(seq)
 
     aa_counts = {
-        'N_term': N_term_count,
-        'C_term': C_term_count,
-        'D': 0,
-        'E': 0,
-        'H': 0,
-        'Y': 0,
-        'K': 0,
-        'R': 0
+        "N_term": N_term_count,
+        "C_term": C_term_count,
+        "D": 0,
+        "E": 0,
+        "H": 0,
+        "Y": 0,
+        "K": 0,
+        "R": 0,
     }
 
     for aa in full_seq:
@@ -267,7 +271,7 @@ def calculate_pi(seq: Union[str, List[str]]) -> float:
             else:
                 pos_charge += aa_count * (1 / (1 + np.power(10, x - aa_pKa)))
         net_charge = neg_charge + pos_charge
-        return net_charge ** 2
+        return net_charge**2
 
     # pH, especially protein pI, rarely falls outside of the (0, 14) range
     opt_results = optimize.minimize_scalar(net_charge, bounds=(0, 14))
@@ -278,7 +282,7 @@ def calculate_pi(seq: Union[str, List[str]]) -> float:
         return np.nan
 
 
-def extract_fv_seq(seq: str, scheme: str='imgt') -> str:
+def extract_fv_seq(seq: str, scheme: str = "imgt") -> str:
     """Uses ANARCI to extract sequence of the Fv domain.
 
     Parameters
@@ -293,15 +297,13 @@ def extract_fv_seq(seq: str, scheme: str='imgt') -> str:
     str
         Extracted sequence of the Fv domain.
     """
-    numberings, _, _ = anarci(
-        [('tmp', seq)], scheme=scheme, output=False
-    )
+    numberings, _, _ = anarci([("tmp", seq)], scheme=scheme, output=False)
     numbering = numberings[0]
-    fv_seq = ''.join([a for _, a in numbering[0][0] if a != '-'])
+    fv_seq = "".join([a for _, a in numbering[0][0] if a != "-"])
     return fv_seq
 
 
-def calculate_seq_charge(seq: str, pH: float=7.4) -> float:
+def calculate_seq_charge(seq: str, pH: float = 7.4) -> float:
     """Calculates the charge at the given pH based on sequence.
 
     Parameters
@@ -317,7 +319,13 @@ def calculate_seq_charge(seq: str, pH: float=7.4) -> float:
         Charge at the given pH.
 
     """
-    if pH < pKa_dict['H'][0]:
-        return seq.count('H') + seq.count('K') + seq.count('R') - seq.count('D') - seq.count('E')
+    if pH < pKa_dict["H"][0]:
+        return (
+            seq.count("H")
+            + seq.count("K")
+            + seq.count("R")
+            - seq.count("D")
+            - seq.count("E")
+        )
     else:
-        return seq.count('K') + seq.count('R') - seq.count('D') - seq.count('E')
+        return seq.count("K") + seq.count("R") - seq.count("D") - seq.count("E")
