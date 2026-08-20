@@ -78,7 +78,7 @@ setup(
         'scipy>=1.6',
         'plyfile',
         'markupsafe==2.0.1',
-        'werkzeug==2.0.3',
+        'werkzeug==3.1.6',
         'meshio', 
         'fair-esm',
         'antiberty',
