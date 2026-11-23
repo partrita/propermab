@@ -77,7 +77,7 @@ setup(
         'biopython>=1.76, <=1.79',
         'scipy>=1.6',
         'plyfile',
-        'markupsafe==2.0.1',
+        'markupsafe>=2.1.1',
         'werkzeug==3.1.9',
         'meshio', 
         'fair-esm',
